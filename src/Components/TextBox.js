@@ -77,6 +77,7 @@ export default function TextBox() {
           <a
             href="https://www.linkedin.com/in/vivijazmin/"
             target="_blank"
+            rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "white" }}
           >
             Viviana Vega Ayllón
