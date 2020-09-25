@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import "./TextBox.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import "./TextBox.css";
 const URL_QUOTES = "https://quota.glitch.me/random";
 const colors_API = [
   "#16a085",
@@ -66,15 +66,24 @@ export default function TextBox() {
             href="https://twitter.com/intent/tweet?hashtags=quotes"
           >
             <button style={{ background: color }}>
-            <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faTwitter} />
             </button>
           </a>
         </div>
       </div>
       <div className="footer">
-        <footer> © 2020 Code by Jizga</footer>
+        <footer>
+          © 2020 Code by{" "}
+          <a
+            href="https://www.linkedin.com/in/vivijazmin/"
+            target="_blank"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Viviana Vega Ayllón
+          </a>
+        </footer>
       </div>
     </div>
-              //<i class="fab fa-twitter"></i>
+    //<i class="fab fa-twitter"></i>
   );
 }
